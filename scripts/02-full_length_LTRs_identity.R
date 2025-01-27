@@ -2,10 +2,10 @@ library(tidyverse)
 library(data.table)
 
 # Load the data
-anno_data <- read.table("assembly.fasta.mod.EDTA.raw/assembly.fasta.mod.LTR.intact.raw.gff3", header = F, sep = "\t")
+anno_data=read.table("hifiasm_output.fa.mod.LTR.intact.raw.gff3",header=F,sep="\t")
 head(anno_data)
 # Get the classification table
-classification <- fread("assembly.fasta.mod.EDTA.raw/assembly.fasta.mod.LTR.intact.raw.fa.anno.list")
+classification=fread("hifiasm_output.fa.mod.LTR.intact.raw.fa.anno.list")
 
 ## NOTE:
 # Or get the file by running the following command in bash:
