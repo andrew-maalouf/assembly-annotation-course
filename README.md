@@ -50,51 +50,63 @@ Arabidopsis thaliana, a widely used model organism, offers insights into genome 
 - **TEsorter**: Classify LTR-RTs into clades using rexdb-plant database.
   - [Link to script 1](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/011_TEsorter.sh)
   - [Link to script 2](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/011_TEsorter_abundance.sh)
-
+- ![TE Distribution](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig4.PNG)
 ### 6. Visualizing and Comparing TE Annotations
 - Use **circlize** in R to visualize TE distribution on the top 10 scaffolds.
-  - [Link to script](#)
-  - ![TE Distribution](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/03-annotation_circlize.R)
 - Compare TE content between accessions.
-  - [Link to script](#)
-
+  - [Link to script 1](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/011_TEsorter_abundance.sh)
+  - [Link to script 2](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/02-tesorter_compare.R)
+![TE Distribution](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig5.PNG)
 ### 7. Refining TE Classification with TEsorter
 - Focus on **Class I LTR-RTs** and refine clade classification, including **Gypsy** and **Copia** superfamilies.
-  - [Link to script](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/011_TEsorter.sh)
 
 ### 8. TE Age Estimation
 - Use **RepeatMasker** output and **parseRM.pl** (BioPerl) to calculate TE divergence and estimate insertion age.
-  - [Link to script](#)
-  - ![TE Divergence](#)
+  - [Link to script 1](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/012_TE_age_est.sh)
+  - [Link to script 2](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/06-plot_div.R)
+  - ![TE Divergence](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig6.PNG)
 
 ### 9. Phylogenetic Analysis of TEs
 - Perform phylogenetic analysis of **Gypsy** and **Copia** families using **Clustal Omega**, **FastTree**, and **iTOL** for tree visualization.
-  - [Link to script](#)
-  - ![Phylogenetic Tree](#)
+  - [Link to script 1](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/015_TE_phylogenetic_analysis.sh)
+  - [Link to script 2](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/016_filtering_refining_annotation.sh)
+  - [Link to script 3](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/017_itol_prep.sh)
+  - [Link to script 4](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/018_prot_length.sh)
+  - ![Phylogenetic Tree 1](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig11.PNG)
+  - ![Phylogenetic Tree 2](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig12.PNG)
 
 ### 10. Homology-Based Genome Annotation with MAKER
 - Use **MAKER** for genome annotation combining ab initio predictions, RNA-Seq evidence, and protein homology.
-  - [Link to script](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/013_run_maker.sh)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/014_maker_out_manip.sh)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/014_2_all_manip_maker.sh)
 - Annotate protein sequences using **InterProScan** for functional domains.
-  - [Link to script](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/016_filtering_refining_annotation.sh)
 
 ### 11. Quality Assessment of Gene Annotations
 - **BUSCO**: Assess annotation completeness on protein and transcript sequences.
-  - [Link to script](#)
-  - ![BUSCO Gene Annotation](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/018_prot_length.sh)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/019_busco_anno.sh)
+  - ![BUSCO Gene Annotation](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig7.PNG)
 - Align protein sequences to **UniProt Viridiplantae** using **blastp** for homology.
-  - [Link to script](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/020_homology.sh)
 
 ### 12. Orthology-Based Gene Annotation Quality Check Using OMArk
 - Use **OMArk** to evaluate gene set quality via hierarchical orthologous groups (HOGs).
-  - [Link to script](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/021_omark.sh)
 - Improve annotation by retrieving missing gene sequences for HOGs.
-  - [Link to script](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/023_miniprot.sh)
 
 ### 13. Comparative Genomics Using GENESPACE and OrthoFinder
 - Use **GENESPACE** to identify orthogroups across accessions (Lu-1, Kar-1, Altai-5).
-  - [Link to script](#)
-  - ![Orthogroup Distribution](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/022_run_genespace.sh)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/16-create_Genespace_folders.R)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/17-Genespace.R)
+  - ![Orthogroup Distribution](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig8.PNG)
 - Visualize orthogroup distribution and synteny with **dotplots** and **riparian plots** for structural rearrangements.
-  - [Link to script](#)
-  - ![Synteny Plot](#)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/024_run_parse_Orthofinder.sh)
+  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/19-parse_Orthofinder.R)
+  - ![Plot](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig9.PNG)
+  - ![Plot](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig13.PNG)
