@@ -101,12 +101,12 @@ Arabidopsis thaliana, a widely used model organism, offers insights into genome 
 
 ### 13. Comparative Genomics Using GENESPACE and OrthoFinder
 - Use **GENESPACE** to identify orthogroups across accessions (Lu-1, Kar-1, Altai-5).
-  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/022_run_genespace.sh)
-  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/16-create_Genespace_folders.R)
-  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/17-Genespace.R)
+  - [Link to script 1](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/022_run_genespace.sh)
+  - [Link to script 2](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/16-create_Genespace_folders.R)
+  - [Link to script 3](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/17-Genespace.R)
   - ![Orthogroup Distribution](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig8.PNG)
 - Visualize orthogroup distribution and synteny with **dotplots** and **riparian plots** for structural rearrangements.
-  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/024_run_parse_Orthofinder.sh)
-  - [Link to script](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/19-parse_Orthofinder.R)
+  - [Link to script 1](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/024_run_parse_Orthofinder.sh)
+  - [Link to script 2](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/scripts/19-parse_Orthofinder.R)
   - ![Plot](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig9.PNG)
   - ![Plot](https://github.com/andrew-maalouf/assembly-annotation-course/blob/main/figures/fig13.PNG)
